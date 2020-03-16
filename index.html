@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canvas Element Manipulation</title>
+        <meta name="description" content="Canvas Element Manipulation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="bar left-bar">
+            <div class="nav-expand-btn" id="nav-expand-btn"></div>
+            <div class="container">
+                <div class="containerII">
+                    <label for="text">Text</label>
+                    <input type="text" class="text" id="text" placeholder="Paste your text...">
+                </div>
+                <div class="containerII">
+                    <label for="pointer-shape">Pointer Shape</label>
+                    <select name="pointer-shape" id="pointer-shape" class="pointer-shape">
+                        <option value="1">rectangle</option>
+                        <option value="2">square</option>
+                        <option value="3">circle</option>
+                    </select>
+                </div>    
+                <div class="containerII">
+                    <label for="speed">Speed</label>
+                    <input type="range" min="1" max="5" class="speed" id="speed">
+                </div>    
+                <img src="WordBeastBig.png" alt="Words Beast">
+                <button class="confirm-btn" id="confirm-btn">confirm</button>
+            </div>
+        </div>
+
+        <div class="bar right-bar" id="right-bar">
+            <button class="btn-right on-off-btn" id="on-off-btn">ON</button>
+            <button class="btn-right restart-btn" id="restart-btn">RE</button>
+        </div>
+
+        <section>
+            <canvas class="box canvas"></canvas>
+            <div class="box user-text" id="user-text"></div>
+        </section>
+       
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
